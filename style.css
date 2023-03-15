@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:dodgerblue;
+    color: azure;
+    font-family: "manrope", sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: whitesmoke;
+    border-radius: 2rem;
+}
+
+form button{
+    color: rgb(238, 146, 113);
+    background: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+    margin-left: 0.5rem;
+}
+form button:hover{
+    color: beige;
+    background: coral;
+}
+.fa-plus-circle{
+    margin-top: 0.3rem;
+    margin-left: -8px;
+}
+.to-do-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-do-list{
+    min-width: 30%;
+    list-style: none;
+}
+.to-do{
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
+.to-do li{
+    flex: 1;
+}
+.trsh-btn, .complete-btn{
+    color: azure;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.complete-btn{
+    background: coral;
+
+}
+.trsh-btn{
+    border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    background: whitesmoke;
+}
